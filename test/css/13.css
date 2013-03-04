@@ -1,0 +1,25 @@
+
+#list ul {
+    display: none;
+
+}
+#list  .block {
+
+    display: block;
+}
+/* body {height: 3000px;background: url("http://images.cnblogs.com/cnblogs_com/ecalf/431722/o_7_4c135bd08efea.jpg") repeat fixed left top #454545;}  */
+img {    background-color: bisque;
+         border: 1px solid red;
+         display: block;
+         height: 115px;
+         width: 100px;
+}
+div {width :100%;}
+section{
+    display:block;
+}
+html { scrollbar-face-color:#f6f6f6; scrollbar-highlight-color:#fff; scrollbar-shadow-color:#eeeeee; scrollbar-3dlight-color:#eeeeee; scrollbar-arrow-color:#000; scrollbar-track-color:#fff; scrollbar-darkshadow-color:#fff; }
+.test {
+    height:28px;
+    background: url("http://www.manmanzou.com/user/css/../images/new_version/y_map.png") repeat-x scroll 0 -126px transparent;}
+

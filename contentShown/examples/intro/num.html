@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../content/css/reset.css" />
+		<style>
+			.intro{ padding:10px; margin:10px; font-size:14px;}
+			pre{ background:#6C6C6C; padding:10px 15px; color:#fff; }
+		</style>
+	</head>
+	<body>
+		<div class='intro'>
+				<p>此处演示的是导航区域显示数字内容，预加载preLoad为false的情况，同时还演示了加载错误图片的情况和callback函数，以及播放区域显示上一张下一张按钮（playBtn:true）。<br>
+					演示的参数时nConte即导航内容为content时和listPlace即导航位置居中(左、右、上、下 请使用样式表中的position控制) 的情况，<br>
+					这种情况下，导航的样式完全由样式表控制，在显示内容规则的情况下你任然可以使用循环，背景滑动，导航按钮等设置<br>
+				</p>
+				<p>参数列表：</p>
+				<pre>
+	"nContent"	: "num",
+	"preLoad"	: false,
+	"playBtn"	: true,
+	"navNum"	: 4,
+	"navSpace"	: 25,
+	"pWidth"	: 500,
+	"pHeight"	: 333,
+	"tbgAnimate"	: false,
+	"animate"	: "bottom",
+	"step"		: 3,
+	"callback"	: function(data){
+				$.contentShown.playPause(data.id); //所有参数已经初始化完毕，进入动画还没开始执行的时候暂停
+				 /* code ..  */ 
+				$.contentShown.playStart(data.id); //完成callback函数之后继续执行当前动画。
+			},
+	"tipsAnimate"	: "slide",
+	"data"		: [......]
+				</pre>
+			</div>
+	</body>
+</html>

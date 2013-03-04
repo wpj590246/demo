@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Jq.contentShown.js by Ethan.Zhu</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>ContentShown jQuery plugin</h1>
+        <h2>jq.contentShown.js</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/EthanZhu/jq.contentShown/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/EthanZhu/jq.contentShown/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/EthanZhu/jq.contentShown" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+<section id="main_content">
+<p>/******************************************</p>
+<p>Update to v2.0, renamed to jq.contentShown</p>
+<p>@license:         This contentShown jQuery plug-in is dual licensed under the MIT and GPL licenses.</p>
+<ul>
+ <li>jq.contentShown.js</li>
+ <li>
+ <li>@author          Ethan.Zhu（zhuyidong）</li>
+ <li>@version         Version 2.0</li>
+ <li>@copyright       Copyright (c) 2012 Ethan.Zhu</li>
+ <li></li>
+ <li>@docs            <a href="http://ethanzhu.github.com/jq.contentShown/">http://ethanzhu.github.com/jq.contentShown/</a></li>
+ <li>@demo            <a href="http://ethanzhu.github.com/jq.contentShown/examples/img-demo.html" target="_blank">images demo</a> ; <a href="http://ethanzhu.github.com/jq.contentShown/examples/cont-demo.html" target="_blank">content demo</a></li>
+ <li>@email			  <a href="mailto:pig.whose@gmail.com">pig.whose@gmail.com</a> ; <a href="mailto:12377166@qq.com">12377166@qq.com</a></li>
+ <li></li> 
+</ul>
+<p>******************************************/</p>
+<p><b>Examples:</b></p>
+<p>	<a href="http://ethanzhu.github.com/jq.contentShown/examples/img-demo.html" target="_blank">Images Demo</a></p>
+<p>	<a href="http://ethanzhu.github.com/jq.contentShown/examples/cont-demo.html" target="_blank">Content Demo</a></p>
+<pre>
+<p>SIZE: <br>Main:<br> Compressed and Gzipped 14.6KB, Development version 48KB<br><br>Extend:<br> Compressed and Gzipped 4.2KB, Development version 17KB</p>
+</pre>
+<p><b>What it can do?</b></p>
+<p>Hot news</p>
+<div style="padding:5px;"><img src="content/images/demo/8.jpg"></div>
+<p>Tab demo</p>
+<div style="padding:5px;"><img src="content/images/demo/9.jpg"></div>
+<p>Images shown</p>
+<div style="padding:5px;"><img src="content/images/demo/1.jpg"></div>
+<div style="padding:5px;"><img src="content/images/demo/2.jpg"></div>
+<div style="padding:5px;"><img src="content/images/demo/3.jpg"></div>
+<div style="padding:5px;"><img src="content/images/demo/4.jpg"></div>
+<div style="padding:5px;"><img src="content/images/demo/5.jpg"></div>
+<div style="padding:5px;"><img src="content/images/demo/6.jpg"></div>
+<div style="padding:5px;"><img src="content/images/demo/7.jpg"></div>
+<p>
+<b>How to use:</b><br>
+ $('elem').contentShown({'options'});<br><br>
+setter:<br>
+ $('elem').contentShown('option',{'options'});<br>
+ $('elem').contentShown('option','option','value');<br><br>
+getter:<br>
+ var option = $('elem').contentShown('option','option name');<br><br>
+build:<br>
+ $('elem').contentShown({'options'});
+ $('elem').contentShown('build');
+</p>
+
+<p><b>default options:</b></p>
+
+<pre><code>
+ id : null,		<span>// used to getter you needn't to set this.</span>
+ navSpace : 47,		<span>// navigation item space</span>
+ pWidth : 0,		<span>// payer main width</span>
+ pHeight : 0,		<span>// player main height</span>
+ navNum : 4,		<span>// the quantities of in navigation will be seen </span>
+ navPlace : null,	<span>// where is the nav lr: left or right; null: bottom or top</span> 
+ autoPlay : true,	<span>// auto play: true or false.</span>
+ autoTime : 4000,	<span>// time interval of AutoPlay</span>
+ events : 'mouseenter',	<span>// nav item events</span>
+ tbgAnimate : true,	<span>// nav background animate</span>
+ tbgSpeed : 'fast',	<span>// nav background animate speed</span>
+ addtional : false,	<span>// if you want to show particular style, you can set this as true.</span>
+ step : 1,		<span>// The quantities of navigation each slide</span>
+ navSpeed : 'fast',	<span>// nav slide speed</span>
+ opacity : 0.6,
+ data : null,		<span>// main data</span>
+ loop : true,		<span>// nav loop</span>
+ player : true,		<span>// is show player</span>
+ animate : 'fade',	<span>// options: left,right,top,bottom,fade,none</span>
+ showTips : true,	<span>// show tips message</span>
+ tipsAnimate : 'fade',	<span>// options: fade,slide</span>
+ selected : 1,		<span>// current selected</span>
+ callback : null,
+ preLoad : true,	<span>// preload img</span>
+ target : '_blank',	<span>// global target</span>
+ pSpeed : 500,		<span>// player animate speed</span>
+ pType : false,		<span>// show plyer type or not</span>
+ nContent : 'image',	<span>// type of nav: num,none,image,content</span>
+ pContent : 'image',	<span>// type of player : image, content</span>
+ listPlace : null,	<span>// when you want to set up navigation center, set this as "center"</span>
+ tipsBtn : false,	<span>// show buttons in tips</span>
+ loadClass : 'cs-player-loading',	<span>// preload style</span>
+ missing : 'cs-load-missing',		<span>// missing image style</span>
+ playBtn : false,	<span>// show buttons in player you can click it to prev or next one by one</span>
+ playBtnShow : null	<span>// player buttons always show or not. options: always,null</span>
+</code></pre>
+      </section>
+    </div>
+    
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31251094-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+    
+  </body>
+</html>

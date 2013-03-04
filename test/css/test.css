@@ -1,0 +1,7 @@
+div {
+	min-width : 12px;
+	height : 12px;
+	background-color : red;
+	/* max-width: 200px; */
+    _width: expression((this.offsetWidth > 290) ? '290px' : true);
+}

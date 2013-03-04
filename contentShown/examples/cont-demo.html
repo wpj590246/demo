@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<title>Content Demo</title>
+	<link rel="stylesheet" type="text/css" href="../content/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../content/css/content-shown.css" />
+	</head>
+	<body>
+		<div class="demo">
+			<div class="intr">
+				tab demo <a class="show-intro" target="_blank" href="intro/tab.html">options</a>
+			</div>
+			<div id="tab" class="content-shown">
+				<ul>
+					<li class="cs-nav-item"><p class="this-content"><a href="http://ethanzhu.github.com/jq.contentShown/" target="_blank">Home</a></p></li>
+					<li class="cs-nav-item"><p class="this-content"><a href="https://github.com/EthanZhu/jq.contentShown" target="_blank">follow me</a></p></li>
+					<li class="cs-nav-item"><p class="this-content"><a href="http://ethanzhu.github.com/jq.contentShown/examples/img-demo.html" target="_blank">Image Demo</a></p></li>
+				</ul>
+				<ul>
+					<li class="cs-player-item"><div class="this-content"><p>tab1</p></div></li>
+					<li class="cs-player-item"><div class="this-content"><p>tab2 content</p></div></li>
+					<li class="cs-player-item"><div class="this-content"><p>tab3</p></div></li>
+				</ul>
+			</div>
+		</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<script>
+    if(!window.jQuery)
+    document.write('<script type="text/javascript" src="../scripts/libs/jquery/1.4.2/jquery.min.js"><'+'/script>');
+</script>
+<script type="text/javascript" src="../scripts/release/jq.contentShown.js"></script>
+<script type="text/javascript" src="../scripts/release/jq.contentShown.extend.js"></script>
+
+	<script type="text/javascript" src="../scripts/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../scripts/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript">
+$(function(){
+	$('.show-intro').fancybox({
+		'transitionIn'		: 'none',
+		'transitionOut'		: 'none'
+	});
+$('.content-shown').contentShown();
+$('#newone').contentShown('option',{
+	'navNum' : 5,
+	'step':4,
+	'nContent':'content',
+	'navPlace':'lr',
+	'navSpace': 30,
+	'tbgAnimate': false,
+	'autoTime': 2000,
+	'player':false
+});
+$('#newone').contentShown('build');
+
+$('#tab').contentShown('option',{
+	'navNum' : 3,
+	'nContent':'content',
+	'pContent':'content',
+	'navSpace': 120,
+	'tbgAnimate': false,
+	'autoTime': 3000,
+	'pWidth':500,
+	'pHeight':100,
+	'showTips':false
+});
+$('#tab').contentShown('build');
+
+})
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31251094-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	</body>
+</html>

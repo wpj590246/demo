@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title></title>
+        <style>
+            body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+                margin: 0;
+                padding: 0;
+            }
+            #container {
+                background: url("lamp.jpg") no-repeat scroll right top #FFFFFF;
+                font-size: 12px;
+                margin: 0 auto;
+                padding: 180px 0 160px;
+                width: 731px;
+            }
+            #content {
+                padding-left: 170px;
+            }
+            #content .f-input {
+                border: 1px solid #7B9EBA;
+                padding: 2px 1px;
+            }
+            #content input {
+                vertical-align: bottom;
+            }
+            #content h2 {
+                color: #D4151C;
+                font-size: 16px;
+                margin: 10px 0;
+            }
+            #content p{
+                padding: 9px 0;
+            }
+            #content form {
+                padding: 2px 0 0 25px;
+            }
+            #content textarea {
+                height: 42px;
+                overflow: hidden;
+                vertical-align: middle;
+                width: 180px;
+            }
+            #content #submit {
+                background: url("submit.jpg") repeat scroll 0 0 transparent;
+                border: 0 none;
+                height: 23px;
+                width: 110px;
+                cursor: pointer;
+                overflow: hidden;
+            }
+            .left {
+                text-align: right;
+                width: 120px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="content">
+                <h2>邮件退订</h2>
+                <p>
+                    <strong>尊敬的用户：</strong>你确定要退订软狗网的邮件吗？
+                </p>
+                <p>请告诉我们您退订的原因，我们会根据您的意见及时改进。</p>
+                <form>
+                    <table cellspacing="0" cellpadding="0" border="0" >
+
+                        <tr>
+                            <td class="left"></td> <td><p><input type="checkbox" name="reason" value=""/>内容不够精彩</p></td>
+                        </tr>
+                        <tr>
+                            <td></td> <td><p><input type="checkbox" name="reason" value=""/>发送频率偏高</p></td>
+                        </tr>
+                        <tr>
+                            <td></td> <td><p><input type="checkbox" name="reason" value=""/>对购物帮助不大</p></td>
+                        </tr>
+                        <tr>
+                            <td></td> <td><p><input type="checkbox" name="reason" value=""/>不需要此类信息</p></td>
+                        </tr>
+                        <tr>
+                            <td  class="left"><label>其他原因：</label></td> <td><p><textarea class="f-input" rows="3" cols="20" name="o-reason"></textarea></p></td>
+                        </tr>
+                        <tr>
+                            <td class="left"><label>您要退订的E-mail：</label></td> <td><p><input class="f-input" type="text" name="email"/></p></td>
+                        </tr>
+                        <tr>
+                            <td></td> <td><input id="submit" type="submit" value=""/></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+
+        </div>
+    </body>
+</html>

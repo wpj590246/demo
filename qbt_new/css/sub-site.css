@@ -1,0 +1,284 @@
+table {
+    border: 0 none;
+    border-collapse: collapse;
+    width: 100%;
+}
+img{
+    vertical-align: top;
+    border: 0 none;
+}
+h2{
+    font-size: 18px;
+}
+
+#nav ul{
+    position: relative;
+}
+#nav a{
+    position: relative;
+    z-index: 11;
+}
+#nav .nav-hook{
+    color: #000000;
+    display: none;
+    height: 49px;
+	width:60px;
+    padding: 0 10px;
+    background-color: #EF9927;
+    position: absolute;
+    top:0;
+    left: 0;
+
+    
+}
+
+
+/*layer-1*/
+.container-inner-s{
+    width: 992px;
+    min-height: 520px;
+    height:auto !important;
+    height:520px;
+}
+#article.container-inner-s{
+    margin-top: 15px;
+}
+.layer-1-left {
+    width: 681px;
+    float: left;
+    display: inline-block;
+}
+.layer-1-right{
+    width: 302px;
+    float: right;
+    display: inline-block;
+}
+.side-login{
+    border: 1px solid #DDDDDD;
+    width: 300px;
+    height: 198px;
+    overflow: hidden;
+}
+.login-form{
+    padding: 18px 19px 0;
+}
+.login-input{
+    border: 1px solid #d0cecf;
+    background-color: #f8f8f8;
+    height: 25px;
+    line-height: 25px;
+    text-indent: 5px;
+    width: 170px;
+}
+.login-form td{
+    padding: 0  9px 18px 0;
+}
+.login-button {
+    background-color: #F28D19;
+    border-color: #F28D19;
+    border-radius: 5px 5px 5px 5px;
+    border-style: solid;
+    color: #FFFFFF;
+    font-weight: bold;
+    height: 30px;
+    line-height: 27px;
+    text-align: center;
+    width: 88px;
+}
+/*school*/
+.col-0{
+    color: #f58c17;
+}
+.breadcrumbs {
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 0 0 1px;
+    height: 20px;
+    padding-left: 4px;
+    margin-top: 10px;
+}
+.breadcrumbs a:hover{
+    color: #f58c17;
+}
+.box-content{
+    border: 1px solid #cccccc;
+    padding: 13px 17px;
+    background-color: #fbfbfb;
+}
+#article .mt-29{
+    margin-top: 29px;
+}
+.box-content p{
+    line-height: 23px;
+    margin-bottom: 14px;
+    text-indent: 2em;
+}
+.box-content p a {
+    text-decoration: underline;
+    color: #f18e19;
+    font-weight: bold;
+}
+.content-title{
+    margin: 22px 0 18px 8px;
+}
+.art-list{
+    padding: 0;
+    margin-top: 10px;
+}
+.art-list .box-title{
+    background-color: #878787;
+    position: relative;
+}
+.more {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+.art-list .box-inner{
+    padding: 13px 10px 17px 15px;
+}
+.art-list .l-s-s{
+    list-style: square inside none;
+    line-height: 2em;
+}
+.art-list .datetime {
+    color: #818181;
+    font-size: 10px;
+}
+.box-content.connection {
+    background: url("../img/phone.jpg") no-repeat scroll 258px  top #F7F7F7;
+    margin-top: 15px;
+}
+.connection p{
+    font-size: 13px;
+    margin-bottom: 5px;
+    text-indent: 10px;
+}
+.connection .phone-number{
+    font-size: 18px;
+    font-weight: bold; 
+    color: #f29629;
+}
+.left-content .d-t{
+    background-color: #F3F3F3;
+    color: #818181;
+    height: 28px;
+    line-height: 28px;
+    margin: 0 5px;
+}
+.blank{
+    margin-left: 30px;
+}
+.detail-content{
+    padding: 14px 11px 0
+}
+.detail-content  p {
+    line-height: 2em;
+    padding-bottom: 10px;
+    text-indent: 2em;
+}
+.detail-content .strong{
+    padding-bottom: 2px;
+    font-weight: bold; 
+}
+/*case*/
+.more-case{
+    background-color: #ffffff;
+}
+.mar-auto{
+    margin: 0 auto;
+    display: block;
+}
+.more-case .box-inner{
+    padding-top: 0px;
+}
+.more-case li{
+    margin-top: 28px;
+}
+.more-case .spe{
+    margin-top: 7px;
+}
+.box-block .logo{
+    height: 73px;
+}
+.box-block {
+    background: url("../img/bg-1.jpg") repeat-x scroll 0 bottom #E9E9E9;
+    display: inline-block;
+    float: left;
+    height: 202px;
+    margin-top: 11px;
+    overflow: hidden;
+    padding: 17px 25px 0 20px;
+    width: 293px; ;
+    overflow: hidden;
+    border: 1px solid #CCCCCC;
+}
+.noborder-l{
+    border-left: 0;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+/*customer*/
+.cus-content{
+    padding: 0 5px;
+}
+.cus-content .box-block{
+    margin-top: 25px;
+    width: 281px;
+}
+.logo-motto{
+    height: 59px;
+    padding-right: 10px;
+}
+.col-1{
+    color: #d65214;
+}
+.cus-box li{
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+    float: left;
+    height: 122px;
+    margin: 15px 12px 0 0;
+    width: 184px;
+    overflow: hidden;
+}
+.cus-box .last{
+    margin-right: 0;
+}
+.cus-box .img-container {
+    height: 71px;
+    width: 184px;
+    padding: 2px;
+    overflow: hidden;
+}
+.cus-box dl{
+    background-color: #F7F7F7;
+    border-top: 1px solid #CCCCCC;
+    height: 42px;
+    padding: 4px 0 0 21px;
+}
+/*login*/
+.login-container{
+    height: 300px;
+    padding: 110px 0 0 198px;
+}
+.login-container .box-content{
+    height: 240px;
+    overflow: hidden;
+    padding: 30px 30px 0 47px;
+    width: 512px;
+}
+.login-container .login-form{
+    width: 243px;
+    height: 211px;
+    padding-top: 2px;
+}
+.login-form .login-title{
+    color: #585858;
+    font-size: 34px;
+    font-weight: bold;
+    padding-bottom: 22px;
+
+}

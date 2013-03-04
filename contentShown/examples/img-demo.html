@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+	<title>Images Demo</title>
+	<link rel="stylesheet" type="text/css" href="../content/css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="../content/css/content-shown.css" />
+	</head>
+	<body>
+		<div class="demo">
+			<div class="intr">
+				navNum:'pyramid' <a class="show-intro" target="_blank" href="intro/pyramid.html">options</a>
+			</div>
+			<div id="pyramid" class="content-shown"></div>
+		</div>
+		<div class="demo">
+				<div class="intr">
+					navNum:'num', missing:'...' <a class="show-intro" target="_blank" href="intro/num.html">options</a>
+				</div>
+				<div id="lvyou" class="content-shown nums"></div>
+		</div>
+
+		<div class="demo">
+			<div class="intr">
+				sohu <a class="show-intro" target="_blank" href="intro/sohu.html">options</a>
+			</div>
+			<div id="sohu" class="content-shown"></div>
+		</div>
+		<div class="demo">
+			<div class="intr">
+				"nContent":"none" <a class="show-intro" target="_blank" href="intro/none.html">options</a>
+			</div>
+			
+			<div id="qiyi" class="content-shown"></div>
+		</div>
+		
+		<div class="demo">
+			<div class="intr">
+				xunlei <a class="show-intro" target="_blank" href="intro/xunlei.html">options</a>
+			</div>
+			<div id="xunlei" class="content-shown"></div>
+		</div>
+		<div class="demo">
+			<div class="intr">
+				navNum:"css",addtional: true <a class="show-intro" target="_blank" href="intro/addtional.html">options</a>
+			</div>
+			<div id="qiyi1" class="content-shown"></div>
+		</div>
+ 		<div class="demo">
+ 			<div class="intr">
+				navNum:"css" <a class="show-intro" target="_blank" href="intro/css.html">options</a>
+			</div>
+			<div id="qiyi2" class="content-shown"></div>
+		</div>
+
+		<div class="demo">
+			<div class="intr">
+				navPlace:'lr' (left or right) <a class="show-intro" target="_blank" href="intro/lr.html">options</a>
+			</div>
+			
+			<div id="left" class="content-shown"></div>
+		</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+<script>
+    if(!window.jQuery)
+    document.write('<script type="text/javascript" src="../scripts/libs/jquery/1.4.2/jquery.min.js"><'+'/script>');
+</script>
+<script type="text/javascript" src="../scripts/release/jq.contentShown.js"></script>
+<script type="text/javascript" src="../scripts/release/jq.contentShown.extend.js"></script>
+<script type="text/javascript" src="../scripts/release/img-demo.js"></script>
+	<script type="text/javascript" src="../scripts/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="../scripts/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="../scripts/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<script type="text/javascript">
+$(function(){
+	$('.show-intro').fancybox({
+		'transitionIn'		: 'none',
+		'transitionOut'		: 'none'
+	});
+	//$('#sohu').contentShown('option',{'autoPlay':false});
+})
+
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-31251094-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	</body>
+</html>

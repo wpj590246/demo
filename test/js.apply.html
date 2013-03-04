@@ -1,0 +1,127 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+    </head>
+    <body>
+        <div>
+            <button>1111</button>. <button>2222</button> <button>3333</button>
+        </div>
+        <p><button id="test">Test</button></p>
+        <p id="log"></p>
+        <script>
+            var test={
+                step:1,
+                obj:$('div button'),
+                func:function(i,s) {
+                    //alert(this.step);return;
+                    self=this;
+                    self.obj.eq(i).text(self['step_'+i]);
+                    self['step_'+i]++;
+                   self['clr_'+i]= setTimeout(function() {
+                        self.func(i,s);
+                    }, 1000);
+                },
+                set : function (i,s) {
+                    //alert(this.step);
+                    
+                    self=test;
+                    clearTimeout(self['clr_'+i]);
+                    self['step_'+i]=1;
+                    
+                    self.func(i,s);
+                }
+            };
+            var test1={
+                step:2
+            };
+            $('div button').click(function () {
+                var i=$(this).index();
+                test.set(i);
+            });
+            // $('div ').on('click','button', $.proxy(test.set,test1,1));
+            (function(){
+                var test11=function (i) {
+                    return new test11.fn.set(i);
+                };
+                test11.fn=test11.prototype={
+                    step:1,
+                    obj:$('div button'),
+                    func:function(i,s) {
+                        //alert(this.step);return;
+                        self=this;
+                        self.obj.eq(i).text(self.b);
+                        self.b++;
+                        self.set(i,s);
+                    },
+                    set : function (i,s) {
+                        //alert(this.step);
+                        self=this;
+                        this.b=11;
+                        setTimeout(function() {
+                            test11.func(i,s);
+                        }, 1000);
+                    }
+                };
+                test11.fn.set.prototype = test11.fn;
+                window.test11 = test11;
+            })();
+            $('div button').click(function () {
+                var i=$(this).index();
+                //test11(i);
+            });
+         
+            function qqq() {
+                // this.step=3;
+                                
+                this.obj=$('div button');
+                this.func=function(i,s) {
+                    // alert(this.step);return;
+                    self=this;
+                    self.obj.eq(i).text(self.step);
+                    self.step++;
+                    self.set(i,s);
+                };
+                this.set = function (i,s) {
+                    //alert(this.step);
+                    self=this;
+                    setTimeout(function() {
+                        self.func(i,s);
+                    }, 1000);
+                }
+            }
+            
+           
+            
+            $('div button').click(function () {
+                var q1=new qqq();
+                new Number;
+                var i=$(this).index();
+                //   q1.step=2;
+                //    q1.set(i);
+                //test11(i);
+            });
+            qqq.prototype.step=12312;
+             
+            //  var q1=new qqq();
+            // q1.step=1;
+            //   alert(q1.step);
+            
+            //   var q2=new qqq();alert(q2.step);
+            var obj = {
+                name: "John",
+                test: function() {
+                
+                    $("#log").append( this.name );
+                    $("#test").off("click", obj.test);
+                }
+            };
+            $("#test").on( "click", $.proxy( obj, "test" ) );
+
+        </script>
+    </body>
+</html>

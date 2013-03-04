@@ -1,0 +1,33 @@
+.clearfix:after {
+    clear: both;
+    visibility: hidden;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    overflow: hidden;
+}
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+
+#ff-r
+{
+ position:  fixed;
+_position:  absolute;
+ right:     15px;
+ top:       15px;
+_top:       expression(eval(document.compatMode &&
+            document.compatMode=='CSS1Compat') ?
+            documentElement.scrollTop+15 :
+            document.body.scrollTop +
+            (document.body.clientHeight
+            -this.clientHeight));
+}

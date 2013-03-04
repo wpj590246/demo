@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../content/css/reset.css" />
+		<style>
+			.intro{ padding:10px; margin:10px; font-size:14px;}
+			pre{ background:#6C6C6C; padding:10px 15px; color:#fff; }
+		</style>
+	</head>
+	<body>
+<div class='intro'>
+				<p>这个演示包含了最复杂最完成的data参数演示，具体请查看相关内容的data格式。</p>
+				<p>参数列表：</p>
+				<pre>
+	"navNum"	: 6,
+	"navSpace"	: 94,
+	"pWidth"	: 980,
+	"pHeight"	: 380,
+	"step"		: 5,
+	"selected"	: 5,
+	"ptype"		: true,
+	"tipsBtn"	: true,
+	"playBtn"	: true,
+	"data"		: [ //最完整的data格式介绍以及说明 其中所有设置中 g 代表 target 除提示信息中的按钮 "b_" 中 t 代表title外，其它设置中 t 一律代表内容。
+				{
+				 "b": "", //"b":{"t":"","l":"","g":"","a":""} 用这种方式刻度设置链接，独立设置打开方式，设置图片alt。
+				 "s": "", 
+				 /*
+				  * 导航区域内容
+				  * 对象形式 "s":{"t":"","l":"","g":"","a":"","w":"","h":""} ，
+				  * 在使用不规则导航图的情况系需要设置 w（width） 和 h（height）
+				  **/
+				 
+				 "l": "", //global link 当前数据中所有使用链接的地方，如果未单独设置则使用global link。
+				 "t": "", //"t":{"t":"","l":"","g":"","a":""} 主标题h2 
+				 "t1": "", //"t1":{"t":"","l":"","g":"","a":""} 副标题h3
+				 "m": "", //介绍，可以是任何形式的html内容。
+				 "b_": "" 
+				 /* 
+				  * 对象的形式：b_':{'c':'','l':'','g':'','t':'','t_':''} 
+				  * class（后缀，btn-class，btn在样式表中已经存在）,  
+				  * link, target, title, text,
+				  * 如果有多个按钮请使用数组。[{按钮1},{按钮2}]，
+				  * 从第二个开始 自动增加样式 btn1，btn2...btn(n)（btn为样式表中全局btn样式）
+				  * 你可以在样式表中独立重置每个按钮的位置，大小等等。
+				  **/
+				 
+				 "tp":"" //type 即演示中右上角显示的内容。
+				 
+				 "ot":[//other title 多个对象的情况请使用数组，单个对象数组形式为可选。
+					{
+					 'n':'标题',
+					 'list':[
+						{"t":"content","l":"link"},
+						{"t":"content","l":"link"},
+						{"t":"content","l":"link"}
+						]
+					},
+					{
+					 'n':'标题1',
+					 'list':{"t":"content","l":"link"}
+					},
+					{
+					 'n':'标题2',
+					 'list':{"t":"content","l":"link"}
+					}
+				  ]
+				}，	
+				......
+
+	]
+				</pre>
+			</div>
+	</body>
+</html>

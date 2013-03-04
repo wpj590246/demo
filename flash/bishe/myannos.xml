@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Annotations start="0" num="4" total="4">
+  <Annotation about="*.sjtu.edu.cn/*" timestamp="0x0004be63262a0b8e" href="Cg8qLnNqdHUuZWR1LmNuLyoQjpeosbLMrwI">
+    <Label name="_cse_hhnymeq1p8e" />
+    <AdditionalData attribute="original_url" value="*.sjtu.edu.cn/*" />
+  </Annotation>
+  <Annotation about="*.fudan.edu.cn/*" timestamp="0x0004be632617bf3d" href="ChAqLmZ1ZGFuLmVkdS5jbi8qEL3-3rCyzK8C">
+    <Label name="_cse_hhnymeq1p8e" />
+    <AdditionalData attribute="original_url" value="*.fudan.edu.cn/*" />
+  </Annotation>
+  <Annotation about="*.tongji.edu.cn/*" score="1" timestamp="0x0004be62f4596b0b" href="ChEqLnRvbmdqaS5lZHUuY24vKhCL1uWir8yvAg">
+    <Label name="_cse_hhnymeq1p8e" />
+    <AdditionalData attribute="original_url" value="*.tongji.edu.cn/*" />
+  </Annotation>
+  <Annotation about="www.tongji.edu.cn/*" score="1" timestamp="0x0004bd72213daad9" href="ChN3d3cudG9uZ2ppLmVkdS5jbi8qENnV9omirq8C">
+    <Label name="_cse_mhqmzyed3ty" />
+    <AdditionalData attribute="original_url" value="http://www.tongji.edu.cn/*" />
+  </Annotation>
+</Annotations>

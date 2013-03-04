@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../content/css/reset.css" />
+		<style>
+			.intro{ padding:10px; margin:10px; font-size:14px;}
+			pre{ background:#6C6C6C; padding:10px 15px; color:#fff; }
+		</style>
+	</head>
+	<body>
+		<div class='intro'>
+				<p>Build 功能演示：<br>
+					如果你不知道如何设置data的json数据格式，你也可以把需要展示的内容按照固定格式写进html然后引入extend扩展文件让插件自动为你构建data数据。<br>
+					你可以将debug设置为true让插件在控制台为你输出 构建的data数据（注：输出的数据是压缩的，如果需要对其进行美化，请使用一些在线工具）<br>
+					<br>
+					如果你为了从<b>SEO</b>方面考虑，就想把内容写在html里面，也请使用build扩展。<br>
+					示例就是为了考虑gomesoft.com 的 Cheap Video Converter, DVD Burner software provider, M4V to DVD 关键词而做的build演示。<br>
+					演示中已经提供了最复杂，最完整的写法。<br><br>
+					<b>需要注意:</b>写入html文件的内容，必须按照我所提供的格式，并且内容中不能存在注释性的内容（会被插件获取并处理）
+				</p>
+				<p>使用方法及参数：</p>
+				<pre>
+	$('#products').contentShown();
+	$('#products').contentShown('option',{//如果使用了option 那么这些设置必须在build之前写入。
+		'navNum':4,
+		'navSpace':25,
+		'pWidth':500,
+		'pHeight':333,
+		//'autoPlay':false,
+		'nContent':'num',
+		'tbgAnimate':false,
+		'tipsBtn':true,
+		'tipsAnimate':'slide'
+	});
+	$('#products').contentShown('build');
+	//其它写法：
+	$('id').contentShown()
+	$('id').contentShown('build','option','value'); or $('id').contentShown('build',{'option':'value',...});
+	或者:
+	$('id').contentShown({'option':'value',...});
+	$('id').contentShown('build');
+				</pre>
+			</div>
+	</body>
+</html>

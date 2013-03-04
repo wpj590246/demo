@@ -1,0 +1,20 @@
+ <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Mine</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<script type="text/javascript" src="/demo/jquery.js"></script> 
+<script type="text/javascript" src="mine.js"></script> 
+<link rel="stylesheet" href="mine.css">
+
+ <div id="menu"> 
+        <a href="javascript:;" onclick="init(10,10,10);">初级</a> 
+        <a href="javascript:;" onclick="init(16,16,40);">中级</a> 
+        <a href="javascript:;" onclick="init(30,16,99);">高级</a> 
+        <input type="checkbox" id="check" /><label for="check">是否使用标记(?)</label> 
+    </div> 
+    <div id="submenu"> 
+        剩余雷数：<span id="lastnum"></span> 
+        时间：<span id="time"></span>秒  
+        <span id="warning"></span> 
+    </div> 
+    <div id="main"></div> 

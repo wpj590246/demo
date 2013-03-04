@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    background: #000;
+}
+#start {
+    left: 529px;
+    position: absolute;
+    top: 478px;
+}
+#start:hover {
+    top: 470px;
+}
+.start {
+	_top: 470px;
+}
+
+.flag_flow {
+	display: none;
+
+}
+#start_back1 {display: inline;}
+a {
+    cursor: pointer;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+img {
+    border: 0;
+    position: absolute;
+}
+#screen {
+    background: url("../images/mooncake/background.png") no-repeat;
+    width: 760px;
+    height: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+#something-black {
+    height: 14px;
+    left: 528px;
+    position: absolute;
+    top: 73px;
+    width: 17px;
+    z-index: 12;
+	display:none;
+}
+
+#chang-e {
+    left: 521px;
+    position: absolute;
+    top: 12px;
+    z-index: 11;
+}
+#chang-e, #chang-e img {
+
+    width: 238px;
+    height: 131px;
+}
+#ship-img-1 {
+    left: 68px;
+    position: absolute;
+    top: 414px;
+    z-index: 112;
+    width: 150px;
+    height: 150px;
+    display: none;
+}
+
+
+#basket {
+    height: 20px;
+    position: absolute;
+    top: 390px;
+    width: 100px;
+    left: 114px;
+}
+#hand {
+    left: -6px;
+    top: -15px;
+    position: absolute;
+}
+#hand, #hand img {
+    width: 122px;
+    height: 128px;
+}
+#hand-2, #hand-3 {
+    display: none;
+}
+#leg {
+    left: 0;
+    top: 104px;
+    position: absolute;
+}
+#leg, #leg img {
+    width: 124px;
+    height: 69px;
+}
+#leg-1 {
+    display: none;
+}
+#energy_bar {
+    left: 143px;
+    position: absolute;
+    top: 15px;
+    z-index: 11;
+}
+#energy {
+    height: 30px;
+    width: 84px;
+}
+#time_left {
+    font-family: '微软雅黑','黑体','宋体';
+    font-size: 21px;
+    font-weight: bold;
+    height: 20px;
+    left: 29px;
+    position: absolute;
+    text-align: center;
+    top: 27px;
+    width: 24px;
+    z-index: 11;
+}
+#energy_div {
+    width: 0;
+    height: 30px;
+    position: absolute;
+    top: 22px;
+    left: 77px;
+    z-index: 11;
+    overflow: hidden;
+}
+.countdown {
+    display: none;
+    position: absolute;
+    z-index: 111;
+}
+
+
+#mooncake {
+    position: absolute;
+    top: 0px;
+    z-index: 11111;
+}
+
+.big, .small, .stone {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: -100px;
+}
+
+.ship {
+    overflow: hidden;
+    position: absolute;
+    left: 68px;
+    top: 414px;
+    background: url(../images/mooncake/ship-1.png) no-repeat;
+    width: 150px;
+    height: 150px;
+    z-index: 112;
+}
+.ship-falling {
+    background-image: url(../images/mooncake/ship-2.png)
+}
+.big {
+    background: url(../images/mooncake/mooncake-big-1.png) no-repeat;
+    width: 114px;
+    height: 101px;
+}
+.big-falling {
+    background-image: url(../images/mooncake/mooncake-big-2.png)
+}
+.small {
+    background: url(../images/mooncake/mooncake-small-1.png) no-repeat;
+    width: 66px;
+    height: 61px;
+}
+.small-falling {
+    background-image: url(../images/mooncake/mooncake-small-2.png)
+}
+.stone {
+    background: url(../images/mooncake/stone-1.png) no-repeat;
+    width: 126px;
+    height: 96px;
+}
+.stone-falling {
+    background-image: url(../images/mooncake/stone-2.png)
+}
+
+#popup {
+    background: url("../images/mooncake/alert.png") no-repeat;
+    display: none;
+    height: 236px;
+    left: 188px;
+    padding-left: 22px;
+    padding-top: 30px;
+    position: absolute;
+    top: 148px;
+    width: 384px;
+    z-index: 112;
+    _background-image: url("../images/mooncake/alert.gif")
+}
+#popup textarea {
+    border: 0 none;
+    height: 121px;
+    width: 334px;
+    overflow: hidden;
+}
+#popup button {
+    height: 45px;
+    left: 221px;
+    position: absolute;
+    top: 163px;
+    width: 124px;
+    background: none;
+    border: 0px;
+    cursor: pointer;
+}
+#betwwen {
+    position: absolute;
+    z-index: 111;
+}
+
+#face-1 {
+	display : inline;
+}
+
+#face {
+    left: 8px;
+    overflow: hidden;
+    position: absolute;
+    top: 7px;
+    z-index: 11;
+
+}
+
+#face, #face img {
+	width: 110px;
+	height: 118px;
+
+}
+
+#face-2,#face-3 {display:none;}

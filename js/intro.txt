@@ -1,0 +1,1 @@
+mabase.js  : 全js写的仿jq的方法集；

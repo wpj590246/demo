@@ -1,0 +1,29 @@
+<html>  
+  <head><title>YQL and RSS: Yahoo! Top News Stories</title>  
+  <style type='text/css'>  
+    #results{ width: 40%; margin-left: 30%; border: 1px solid gray; padding: 5px; height: 200px; overflow: auto; }   
+  </style>  
+  <script type='text/javascript'>  
+    // Parses returned response and extracts  
+    // the title, links, and text of each news story.  
+    function top_stories(o){        
+		var items = o.query.results.Result;  
+		 var output = '';  
+		 var no_items=items.length;  
+		 for(var i=0;i<no_items;i++){  
+		   var title = items[i].Title;  
+		   var link = items[i].Url;   
+		  var desc = items[i].Rating.LastReviewIntro;  
+		  output += "<h3><a href='" + link + "'>"+title+"</a></h3>" + desc + "<hr/>";        
+		 }  
+  document.getElementById('results').innerHTML = output;  }  
+      // Place news stories in div tag  
+     
+    </script>  
+  </head>  
+  <body>  
+  <div id='results'></div>  
+  <script src='http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20local.search%20where%20query%3D%22sushi%22%20and%20location%3D%22san%20francisco%2C%20ca%22&format=json&diagnostics=true&callback=cbfunc'>  
+  </script>   
+  </body> 
+</html>  

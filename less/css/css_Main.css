@@ -1,0 +1,6 @@
+*{margin:0; padding:0;}
+.clear{clear:both;}
+input{width:200px;}
+input,img{display:block; float:left;}
+#center{margin:0 auto; width:220px;}
+#div1,#div2,#div3,#div4,#div5,#div6{margin:10px 10px 10px 0; width:25px; height:25px; background:#0c6; cursor:pointer; float:left; display:inline;}

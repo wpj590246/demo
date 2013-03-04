@@ -1,0 +1,117 @@
+ <!-- <div id="cse" style="width: 80%;">Loading</div>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript"> 
+  google.load('search', '1', {language : 'zh-CN', style : google.loader.themes.ESPRESSO});
+  google.setOnLoadCallback(function() {
+    var customSearchOptions = {};
+    var imageSearchOptions = {};
+    imageSearchOptions['layout'] = google.search.ImageSearch.LAYOUT_POPUP;
+    customSearchOptions['enableImageSearch'] = true;
+    customSearchOptions['imageSearchOptions'] = imageSearchOptions;
+    customSearchOptions['adoptions'] = {'layout': 'noTop'};
+    var customSearchControl = new google.search.CustomSearchControl(
+      '001112748388642280575:hhnymeq1p8e', customSearchOptions);
+    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
+    customSearchControl.draw("cse");
+  }, true);
+</script>
+<html>
+<head>
+</head>
+<body>
+<div id="test"></div>
+</body>
+</html>
+ -->
+<!-- 
+
+
+<html>
+<head>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript"> 
+
+google.load("search", "1");
+// Call this function when the page has been loaded       
+function initialize() { 
+     
+	var searchControl = new google.search.SearchControl();       
+	searchControl.addSearcher(new google.search.WebSearch());    
+	searchControl.addSearcher(new google.search.NewsSearch());    
+	searchControl.draw(document.getElementById("searchcontrol"));   
+	}   
+	google.setOnLoadCallback(initialize);    
+</script>
+</head> 
+<body>     
+<div id="searchcontrol"></div>  
+</body> 
+</html> -->
+
+
+
+<html>
+<head>
+    <meta  http-equiv="Content-Type" content="text/html; charset=utf8" />
+    <script type="text/javascript" src="yahoo_search_api.js"></script>
+    <script type="text/javascript">
+        function search()
+        {
+            var kw = document.getElementById("key").value;
+            if (kw == "")
+            {
+                alert("请问查询什么？");
+                document.getElementById("key").focus();
+                return;
+            }
+            
+            var ar = new Object();
+            ar["Doc"] = escape(kw);
+            ar["First"] = 1;
+            ar["Count"] = 10;
+            
+            var v = document.getElementById("vdiv");
+            v.innerHTML = "正在查询，请稍等...";
+            
+            var r = Yahoo_Search.Results(ar);
+            
+            v.innerHTML = "";
+            
+            for (k in r)
+            {
+                var vl = r[k];
+                //for (z in vl){document.write(k + "<br />" + z + ":" + vl[z] + "<br /><br />");}
+                v.innerHTML += "[" + vl["I"] + "]&nbsp;&nbsp;";
+                v.innerHTML += "<b><a href='" + vl["Url"] + "'>" + unescape(vl["Title"]) + "</a></b>";
+                v.innerHTML += "<br />";
+                v.innerHTML += unescape(vl["Summary"]);
+                v.innerHTML += "<br /><font color='green'>" + vl["Url"] + "</font>";
+                v.innerHTML += "&nbsp;&nbsp;<a href='" + vl["ClickUrl"] + "'>cached</a>";
+                v.innerHTML += "<br /><br />";
+            }
+        }
+        
+        function keydown(e)
+        {
+            if(window.event && e.keyCode==13) // IE
+            {
+                search();
+            }
+            else if(e.which && e.which==13) // Netscape/Firefox/Opera
+            {
+                search();
+            }
+        }
+    </script>
+</head>
+<body>
+yahoo
+<center>
+<input type="text" id="key" onkeydown="keydown(event)"/><input type="button" value="搜索" onclick="search()" />
+</center>
+<hr>
+<div id="vdiv">
+</div>
+</body>
+</html>
+
