@@ -5,7 +5,7 @@
         <title>情报通-中国最专业的电子商务数据服务商-数据魔方</title>
         <meta name="description" content="情报通是中国领先的电子商务数据统计分析软件,可提供数据分析、销售数据分析、店铺数据分析、广告淘宝数据统计等功能，比数据魔方更微观。">
         <meta name="keywords" content="情报通,数据分析,数据魔方,数据统计">
-        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="css/main-site.css">
         <link rel="stylesheet" href="css/sub-site.css">
         <script src="js/jquery-1.8.0.min.js"></script>
