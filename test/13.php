@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <!--        <meta charset="UTF-8"/>-->
+                <meta charset="UTF-8"/>
         <title>收藏本站</title>
         <link href="/demo/test/css/13.css" type='text/css' rel='stylesheet'/>
         <script type="text/javascript" src="/demo/js/jquery.js"></script>
@@ -11,8 +11,24 @@
     </head>
     <body>
 <?php
-
-
+function myprint($e){
+    if(is_array($e))
+       { print_r ($e); echo '<br/>';}
+    else
+        echo $e.'<br/>';
+}
+$a = '111';
+$b = '222';
+$params = compact('a','b');
+print_r($params);
+$p_dir = getcwd().DIRECTORY_SEPARATOR.'..';
+chdir($p_dir);
+myprint(getcwd());
+myprint(scandir('test'));
+echo $qqqqq;
+myprint(error_get_last());
+myprint(headers_sent());
+myprint(get_magic_quotes_gpc()) ;
 echo $pre = base64_encode($_SERVER['HTTP_HOST']);
 echo '<br/>';
 
