@@ -1,41 +1,16 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-                <meta charset="UTF-8"/>
+        <meta charset="UTF-8"/>
         <title>收藏本站</title>
         <link href="/demo/test/css/13.css" type='text/css' rel='stylesheet'/>
         <script type="text/javascript" src="/demo/js/jquery.js"></script>
-
-<script type="text/javascript" src="/demo/js/jquery-ui-1.9.2.custom.min.js"></script>
-		 <script type="text/javascript" src="/demo/js/jquery.flip.js"></script>
+		<script type="text/javascript" src="/demo/js/jquery-ui-1.9.2.custom.min.js"></script>
+		<script type="text/javascript" src="/demo/js/jquery.flip.js"></script>
     </head>
     <body>
 <?php
-function myprint($e){
-    if(is_array($e))
-       { print_r ($e); echo '<br/>';}
-    else
-        echo $e.'<br/>';
-}
-$a = '111';
-$b = '222';
-$params = compact('a','b');
-print_r($params);
-$p_dir = getcwd().DIRECTORY_SEPARATOR.'..';
-chdir($p_dir);
-myprint(getcwd());
-myprint(scandir('test'));
-echo $qqqqq;
-myprint(error_get_last());
-myprint(headers_sent());
-myprint(get_magic_quotes_gpc()) ;
-echo $pre = base64_encode($_SERVER['HTTP_HOST']);
-echo '<br/>';
 
-echo  htmlentities("<div>");echo htmlspecialchars('<div>');echo html_entity_decode("&lt;div&gt;");
-echo '<br/>';
-
-echo '<br/>';echo base64_decode(urldecode('M0A0ZGM0NjhkMmVkMjg4ODlmOTFhZDdmYjVjODI4MDBkNg%3D%3D'));echo base64_decode('<>');
 $cats = array(
     array(
         'id' => 1,
@@ -132,7 +107,7 @@ $cats = array(
 
 
 $str = '<div id="list">';
-$index = array(); //存储id和对应索引值
+$index = array(); //存储id和对应索引�?
 $nameArr = array(); //存储索引值和对应名字
 $setLoopIndex = setLoopIndex($cats, '', &$index, &$nameArr); //循环处理
 $str.='</div>';
@@ -150,7 +125,7 @@ function setLoopIndex($val, $pref, &$index, &$nameArr) {
             $child_pref = trim($pref . ' ' . $key);
             $index[$v['id']] = $child_pref;
             $nameArr[$child_pref] = $v['name'] . ":" . $v['id'];
-            setLoopIndex($v['children'], $child_pref, &$index, &$nameArr); //循环处理该子类
+            setLoopIndex($v['children'], $child_pref, &$index, &$nameArr); //循环处理该子�?
             $str .= '</li>';
         }
         $str .= '</ul>';
@@ -211,20 +186,20 @@ echo "\xef";
 	direction:'lr',
 	color:'#B0EB17',
 	content:'yoyoyo'
-	
+
 })
 });
-            
+
             var Cat={
                 name:"小黑",
                 q:1,
                 makeSound:function(){this.q++;}
             }
             var cat1=Object.create(Cat);
-//            alert(cat1.q);   
+//            alert(cat1.q);
             cat1.makeSound();
                         var cat2=Object.create(Cat);
-//            alert(cat2.q);   
+//            alert(cat2.q);
             cat2.makeSound();
             //            var arr = {
             //                odd :  ['1','2'],
@@ -235,15 +210,15 @@ echo "\xef";
             //       function photoCheck(t) {
             //           console.log(t.select());
             //       }
-               
+
                $('#list>ul').show();
                $('#list').on('click','li',function (e) {
                    e.stopPropagation();
-				 
-                   $(this).children('ul').toggleClass('block').end().siblings('li').children('ul').removeClass('block'); 
+
+                   $(this).children('ul').toggleClass('block').end().siblings('li').children('ul').removeClass('block');
                    return false;
-                   
-                   
+
+
                });
             //    $('div').click(function ( e) {
             //          e.stopPropagation();
@@ -260,28 +235,29 @@ echo "\xef";
             //                t.attr("title", l);
             //                t.attr("href", h);
             //            } else {
-            //                alert("请使用Ctrl+D将本页加入收藏夹！");
+            //                alert("请使用Ctrl+D将本页加入收藏夹�?);
             //            }
             //        });
             //    };
             //    $(function(){
             //        $('#fav').addFavorite('收藏本站',location.href);
             //        if ($.browser.safari || $.browser.opera) {
-            //            alert('q');   
+            //            alert('q');
             //            // Safari pass
             //            // Chrome pass
             //            // Opera pass
             //        } else {
             //            //            alert('a');
             //        }
-            //        
+            //
             //        $('a').hover(function () {
             //            $('div').toggle();
-            //            
+            //
             //        });
             //    });
 
 
         </script>
+
     </body>
 </html>
