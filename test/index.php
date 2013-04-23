@@ -1,7 +1,7 @@
 <?php
-$q = isset($_GET['q']) ? $_GET['q'] : '15';
+$q = isset($_GET['q']) ? $_GET['q'] : 'coffee';
 require_once 'app.php';
-
+$nav_deny = array('callback', 'imagecreate', 'nav', 'utility');
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -12,16 +12,19 @@ require_once 'app.php';
         registcss();
         registcss($q);
         registjq('jquery');
+        registjs();
         ?>
 
     </head>
     <body>
-        
-        <?php 
+        <div class="container">
+            <?php
+            require_once DIR_PHP . '/nav.php';
             require_once DIR_PHP . '/' . $q . '.php';
-
-        ?>
+            ?>
+        </div>
         <?php registjs($q); ?>
+
     </body>
 </html>
 

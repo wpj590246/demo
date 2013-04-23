@@ -1,4 +1,5 @@
 <?php
+pagetitle('it is test for captcha');
 if (isset($_POST['input'])) {
     echo Captcha::Validate($_POST['input']);
     echo $_POST['input'];

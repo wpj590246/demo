@@ -29,8 +29,8 @@ function registjq($js) {
     echo '<script type="text/javascript" src="' . WEB_ROOT . '/../js/' . $js . '.js"></script>';
 }
 
-function registjs($js) {
-    $filename = WEB_JS . '/' . $js . '.js';
+function registjs($js = 'main') {
+    $filename = DIR_JS . '/' . $js . '.js';
     if (file_exists($filename))
         echo '<script type="text/javascript" src="' . WEB_JS . '/' . $js . '.js"></script>';
 }
