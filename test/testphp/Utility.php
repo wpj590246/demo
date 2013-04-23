@@ -3,20 +3,21 @@
 function myprint($e=null) {
     if (is_array($e))
         print_r($e);
-    else
+    elseif ($e != null)
         echo $e;
-    echo '<br/>';
+    echo '--<br/>';
 }
 
 function render($view) {
     require_once $view . '.php';
 }
-function pagetitle ($title) {
+
+function pagetitle($title) {
     echo <<<EOT
-    <div class='toptitle'>$title</div> 
-    
+    <div class='toptitle'>$title</div>
 EOT;
 }
+
 function registcss($css = 'main') {
     $filename = DIR_CSS . '/' . $css . '.css';
     if (file_exists($filename))
@@ -29,7 +30,14 @@ function registjq($js) {
 }
 
 function registjs($js) {
-    $filename =  WEB_JS . '/' . $js . '.js';
+    $filename = WEB_JS . '/' . $js . '.js';
     if (file_exists($filename))
         echo '<script type="text/javascript" src="' . WEB_JS . '/' . $js . '.js"></script>';
+}
+
+function CaptchaCreate($size) {
+    $v = new Captcha(null, 150, 50);
+    $v->UseColour(true);
+    $v->SetNumChars(4);
+    $v->Create();
 }

@@ -9,11 +9,11 @@
         <style>
             @font-face {
                 font-family: 'SingleMaltaRegular';
-                src: url('fonts/singlemalta-webfont.eot');
-                src: url('fonts/singlemalta-webfont.eot?#iefix') format('embedded-opentype'),
-                    url('fonts/singlemalta-webfont.woff') format('woff'),
-                    url('fonts/singlemalta-webfont.ttf') format('truetype'),
-                    url('fonts/singlemalta-webfont.svg#SingleMaltaRegular') format('svg');
+                src: url('../fonts/singlemalta-webfont.eot');
+                src: url('../fonts/singlemalta-webfont.eot?#iefix') format('embedded-opentype'),
+                    url('../fonts/singlemalta-webfont.woff') format('woff'),
+                    url('../fonts/singlemalta-webfont.ttf') format('truetype'),
+                    url('../fonts/singlemalta-webfont.svg#SingleMaltaRegular') format('svg');
                 font-weight: normal;
                 font-style: normal;
             }

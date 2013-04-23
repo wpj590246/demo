@@ -67,7 +67,7 @@
 </head>
 <body>
 	<div id="container">
-	<canvas id="myCanvas" width="200" height="200">你的浏览器还不支持哦</canvas>
+	<canvas id="myCanvas" width="200" height="200">浣犵殑娴忚鍣ㄨ繕涓嶆敮鎸佸摝</canvas>
 	<button id="lock">lock</button> 
 	<button id="unlock">unlock</button>
 	<ul id="bottom">
