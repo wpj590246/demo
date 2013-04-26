@@ -8,9 +8,6 @@ function myprint($e=null) {
     echo '--<br/>';
 }
 
-function render($view) {
-    require_once $view . '.php';
-}
 
 function pagetitle($title) {
     echo <<<EOT

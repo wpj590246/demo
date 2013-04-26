@@ -19,8 +19,11 @@ $nav_deny = array('callback', 'imagecreate', 'nav', 'utility');
     <body>
         <div class="container">
             <?php
-            require_once DIR_PHP . '/nav.php';
-            require_once DIR_PHP . '/' . $q . '.php';
+$idd = opendir(dirname(__FILE__));
+
+                    myprint(readdir($idd));
+            render('nav', array('q' => $q, 'nav_deny' => $nav_deny));
+            render($q);
             ?>
         </div>
         <?php registjs($q); ?>
