@@ -4,6 +4,7 @@ define('DIR_ROOT', str_replace('\\', '/', dirname(__FILE__)));
 define('DIR_PHP', DIR_ROOT . '/testphp');
 define('DIR_CSS', DIR_ROOT . '/css');
 define('DIR_JS', DIR_ROOT . '/js');
+define('DIR_IMG', DIR_ROOT . '/images');
 define('DIR_CLASSES', DIR_ROOT . '/classes');
 define('DIR_FONTS', DIR_ROOT . '/fonts');
 define('DIR_LOG', DIR_ROOT . '/log');

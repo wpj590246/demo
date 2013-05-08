@@ -19,9 +19,9 @@ $nav_deny = array('callback', 'imagecreate', 'nav', 'utility');
     <body>
         <div class="container">
             <?php
-$idd = opendir(dirname(__FILE__));
+            $idd = opendir(dirname(__FILE__));
 
-                    myprint(readdir($idd));
+            myprint(readdir($idd));
             render('nav', array('q' => $q, 'nav_deny' => $nav_deny));
             render($q);
             ?>

@@ -3,9 +3,9 @@
 class DB {
 
     public $param = 'it is static param </br>';
-    function getParam () {
-        
-        echo $this->param;
+
+    public function getParam() {
+        return $this->param;
     }
 
     function test() {
@@ -19,11 +19,16 @@ class DB {
     function __construct() {
         echo 'this is instance create for __construct' . '</br>';
     }
+
 //    function DB($a,$b) { #与上面construct 相同 
 //        echo $a.$b;
 //    }
-    function __destruct() {#每次不管是实例还是静态调用完DB类后都会调用这个方法
+    function __destruct() {#每次是实例调用完DB类后会调用这个方法
         echo 'this is destroied';
+    }
+
+    public function setParam($param) {
+        $this->param = $param;
     }
 
 }
