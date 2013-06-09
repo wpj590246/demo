@@ -14,7 +14,7 @@ require_once '../app.php';
 //$iLineColour = imagecolorallocate($b, 255, 255, 0);
 //imageline($b, rand(0, 100), rand(0, 50), rand(0, 100), rand(0, 50), $iLineColour);
 //imagejpeg($b);
-Util::CaptchaCreate();
+//Util::CaptchaCreate();
 
 /*
  * 下列为图片剪切示例
@@ -23,4 +23,22 @@ Util::CaptchaCreate();
 //$image = new ImageShortCut(80, 80);
 //$image->init($src_filename, 60, 60, 160, 160);
 //$image->generate_short();
+
+
+//    $aSupportedTypes = array();
+//
+//    $aPossibleImageTypeBits = array(
+//        IMG_GIF=>'GIF',
+//        IMG_JPG=>'JPG',
+//        IMG_PNG=>'PNG',
+//        IMG_WBMP=>'WBMP'
+//    );
+//
+//    foreach ($aPossibleImageTypeBits as $iImageTypeBits => $sImageTypeString) {
+//        if (imagetypes() & $iImageTypeBits) {
+//            $aSupportedTypes[] = $sImageTypeString;
+//        }
+//    }
+//
+//    myprint($aSupportedTypes);
 ?>

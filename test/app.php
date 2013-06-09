@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL) ;
 
 define('DIR_ROOT', str_replace('\\', '/', dirname(__FILE__)));
 define('DIR_PHP', DIR_ROOT . '/testphp');

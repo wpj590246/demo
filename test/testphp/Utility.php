@@ -1,10 +1,17 @@
 <?php
+/**
+ * 输出参数
+ * @param mix $mix <p>
+ * The string being measured for length.
+ * </p>
+ * @return none
 
-function myprint($e=null) {
-    if (is_array($e))
-        print_r($e);
-    elseif ($e != null)
-        echo $e;
+ */
+function myprint($mix=null) {
+    if (is_array($mix))
+        echo '<pre>'.print_r($mix,1).'</pre>';
+    elseif ($mix != null)
+        echo $mix;
     echo '--<br/>';
 }
 

@@ -5,7 +5,8 @@
  */
 
 class ImageShortCut {
-
+    const TEST='test';
+    public static $r = 'dasd';
     private $filename;
     private $ext;
     private $x;

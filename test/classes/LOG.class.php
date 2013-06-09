@@ -11,7 +11,7 @@ class LOG {
             $this->handle = fopen(DIR_LOG . "/log.txt", "a");
     }
 
-    public function err($s) {
+    public function write($s) {
         $time = date("Y-m-d H:i:s");
         $string = $time . "\t\t\t\t" . $s . "\n";
         fwrite($this->handle, $string);
