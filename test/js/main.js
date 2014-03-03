@@ -1,4 +1,4 @@
-$(function(){
+($(function(){
     $.fn.coffee = function (obj) {
         for(var eType in obj) {
             for (var selector in obj[eType]) {
@@ -35,4 +35,4 @@ $(function(){
         },500);
 		
     })
-})
+}))

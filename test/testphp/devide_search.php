@@ -27,6 +27,6 @@ function dev_search(array $arr, $key) {
 $key = 2312;
 //echo dev_search($arr, $key);
 //echo strcmp('11111',11111);// 0
-$str = 'haneenha';
-echo strrpos($str,'ha');
+$c = file_get_contents('http://dict.qq.com/dict?q=%E8%AF%8D%E8%AF%AD');
+var_dump(json_decode($c,1));
 ?>

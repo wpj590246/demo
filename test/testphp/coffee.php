@@ -1,5 +1,5 @@
 <?php
-
+render('header1');
 pagetitle('it is the test for the js code of coffee');
 eval( '$srcimg = "yes eval";' );
 echo $srcimg;
@@ -26,3 +26,4 @@ echo $srcimg;
     great('Tom');
 //    alert(tt);
 </script>
+<?php render('footer1');?>

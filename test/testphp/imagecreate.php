@@ -14,7 +14,7 @@ require_once '../app.php';
 //$iLineColour = imagecolorallocate($b, 255, 255, 0);
 //imageline($b, rand(0, 100), rand(0, 50), rand(0, 100), rand(0, 50), $iLineColour);
 //imagejpeg($b);
-//Util::CaptchaCreate();
+Util::CaptchaCreate();
 
 /*
  * 下列为图片剪切示例
