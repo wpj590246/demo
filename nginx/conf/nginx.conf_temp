@@ -37,7 +37,7 @@ http {
 
     server { #real server
         listen       8000;
-        server_name  new.qbtchina.com;
+        server_name  new.domainchina.com;
         charset      utf-8;
 
         access_log   /var/log/nginx/access_apollo_test_log ;
@@ -55,7 +55,7 @@ http {
         }
         location ~* ^/keyword {
             auth_basic             "QBT Private";
-            auth_basic_user_file   ./qbtpasswd;
+            auth_basic_user_file   ./domainpasswd;
             expires                24h;
             if (!-e $request_filename){
                 rewrite (.*) /index.php last;
@@ -99,11 +99,11 @@ http {
 
     server { #real server
         listen       8000;
-        server_name  .qbtchina.com .qbtchina.com.cn .qbtchina.net;
+        server_name  .domainchina.com .domainchina.com.cn .domainchina.net;
         charset      utf-8;
         #¨®¨°??1?¡¤??¡¥
-        if ($host != "www.qbtchina.com") {
-            rewrite ^(.*)$ http://www.qbtchina.com$1 permanent;
+        if ($host != "www.domainchina.com") {
+            rewrite ^(.*)$ http://www.domainchina.com$1 permanent;
         }
 
         access_log   /var/log/nginx/access_apollo_log ;
@@ -121,7 +121,7 @@ http {
         }
         location ~* ^/keyword {
             auth_basic             "QBT Private";
-            auth_basic_user_file   ./qbtpasswd;
+            auth_basic_user_file   ./domainpasswd;
             expires                24h;
             if (!-e $request_filename){
                 rewrite (.*) /index.php last;
